@@ -45,5 +45,12 @@ This Spring Boot application provides REST APIs to manage employees and departme
 | GET      | /api/v1/departments                      | Get all departments (paginated)        |
 | GET      | /api/v1/departments/{id}?expand=employee | Get department with list of employees  |
 
+
+**Department Table**
+
 <img width="887" height="167" alt="image" src="https://github.com/user-attachments/assets/d7966eba-231b-4295-adb8-632b21df5afe" />
+
+**Employee Table**
+<img width="912" height="342" alt="image" src="https://github.com/user-attachments/assets/2b51532b-e2d4-414b-9c6d-4a90db7146a0" />
+
 
