@@ -23,3 +23,22 @@ This Spring Boot application provides REST APIs to manage employees and departme
  - Spring Boot 3
  - Spring Data JPA
  - MySql Database
+
+**API Endpoints**
+
+Employee Endpoints
+
+| Method   | Endpoint                     | Description                            |
+|----------|----------|------------------------------------------------------------|
+| POST     | /api/v1/employees            | Create new employee                    |
+| PATCH    | /api/v1/employees/{id}       | Update employee details                |
+| GET      | /api/v1/employees            | Get all employees (paginated)          |
+| GET      | /api/v1/employees?lookup=true| Get employee names and IDs (paginated) |
+
+Department Endpoints
+Method	Endpoint	Description
+POST	/api/v1/departments	Create new department
+PATCH	/api/v1/departments/{id}	Update department details
+DELETE	/api/v1/departments/{id}	Delete department (if empty)
+GET	/api/v1/departments	Get all departments (paginated)
+GET	/api/v1/departments/{id}?expand=employee	Get department with employees (paginated)
