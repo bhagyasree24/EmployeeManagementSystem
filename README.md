@@ -5,7 +5,7 @@ This Spring Boot application provides REST APIs to manage employees and departme
 **Features**
  - Employee Management: Create, update, and view employee details
 
- - Department Management: Create, update, and delete and view departments
+ - Department Management: Create, update, delete and view departments
 
 **Advanced Operations**
 
@@ -26,7 +26,7 @@ This Spring Boot application provides REST APIs to manage employees and departme
 
 **API Endpoints**
 
-Employee Endpoints
+**Employee Endpoints**
 
 | Method   | Endpoint                     | Description                            |
 |----------|------------------------------|----------------------------------------|
@@ -43,4 +43,4 @@ Employee Endpoints
 | PATCH    | /api/v1/departments/{id}                 | Update department details              |
 | DELETE   | /api/v1/departments/{id}                 | Delete department                      |
 | GET      | /api/v1/departments                      | Get all departments (paginated)        |
-| GET      | /api/v1/departments/{id}?expand=employee | Get department with employees          |
+| GET      | /api/v1/departments/{id}?expand=employee | Get department with list of employees  |
