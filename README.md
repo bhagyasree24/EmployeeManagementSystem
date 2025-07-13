@@ -1,4 +1,4 @@
-# EmployeeManagementSystem
+# Employee Management System
 
 This Spring Boot application provides REST APIs to manage employees and departments within an organization. It supports all core CRUD operations with proper validation, pagination, and error handling.
 
