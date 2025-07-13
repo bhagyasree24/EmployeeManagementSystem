@@ -53,4 +53,26 @@ This Spring Boot application provides REST APIs to manage employees and departme
 **Employee Table**
 <img width="912" height="342" alt="image" src="https://github.com/user-attachments/assets/2b51532b-e2d4-414b-9c6d-4a90db7146a0" />
 
+**DB Script**
+CREATE TABLE departments (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    creation_date DATE NOT NULL,
+    dept_head_id BIGINT UNIQUE
+);
+
+CREATE TABLE employees (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    role VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    join_date DATE NOT NULL,
+    salary DECIMAL(38,2) NOT NULL,
+    yearly_bonus_percentage DECIMAL(38,2),
+    department_id BIGINT NOT NULL,
+    reporting_manager_id BIGINT,
+    FOREIGN KEY (department_id) REFERENCES departments(id),
+    FOREIGN KEY (reporting_manager_id) REFERENCES employees(id)
+);
 
