@@ -44,3 +44,6 @@ This Spring Boot application provides REST APIs to manage employees and departme
 | DELETE   | /api/v1/departments/{id}                 | Delete department                      |
 | GET      | /api/v1/departments                      | Get all departments (paginated)        |
 | GET      | /api/v1/departments/{id}?expand=employee | Get department with list of employees  |
+
+<img width="887" height="167" alt="image" src="https://github.com/user-attachments/assets/d7966eba-231b-4295-adb8-632b21df5afe" />
+
