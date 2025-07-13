@@ -54,6 +54,8 @@ This Spring Boot application provides REST APIs to manage employees and departme
 <img width="912" height="342" alt="image" src="https://github.com/user-attachments/assets/2b51532b-e2d4-414b-9c6d-4a90db7146a0" />
 
 **DB Script**
+
+```sql
 CREATE TABLE departments (
     id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
