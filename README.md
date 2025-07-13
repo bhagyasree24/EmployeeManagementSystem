@@ -22,7 +22,7 @@ This Spring Boot application provides REST APIs to manage employees and departme
  - Java 21
  - Spring Boot 3
  - Spring Data JPA
- - MySql Database
+ - MySQL Database
 
 **API Endpoints**
 
